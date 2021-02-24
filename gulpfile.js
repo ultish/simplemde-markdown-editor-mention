@@ -68,8 +68,8 @@ gulp.task("scripts", ["browserify:debug", "browserify", "lint"], function() {
 	
 	return gulp.src(js_files)
 		.pipe(concat("simplemde.min.js"))
-		.pipe(uglify())
-		.pipe(buffer())
+		// .pipe(uglify())
+		// .pipe(buffer())
 		.pipe(header(banner, {pkg: pkg}))
 		.pipe(gulp.dest("./dist/"));
 });
@@ -86,7 +86,7 @@ gulp.task("styles", ["prettify-css"], function() {
 		.pipe(buffer())
 		.pipe(header(banner, {pkg: pkg}))
 		.pipe(gulp.dest("./debug/"))
-		.pipe(minifycss())
+		// .pipe(minifycss())
 		.pipe(rename("simplemde.min.css"))
 		.pipe(buffer())
 		.pipe(header(banner, {pkg: pkg}))
