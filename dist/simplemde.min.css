@@ -1,5 +1,5 @@
 /**
- * simplemde v1.11.4
+ * simplemde v1.11.5
  * Copyright Clockwork IT GmbH
  * @link https://github.com/clockwork-it/simplemde-markdown-editor-mention
  * @license MIT
